@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Quiz Game</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="assets\style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+      </head>
+    
+<body>
+
+  <div class="navbar is-white has-shadow">
+    <div class="navbar-brand">
+
+      <a class="navbar-item">
+        <a href="index.html" class="is-size-6 has-text-grey-dark py-4 px-3 ml-2 mt-2"> Home </a>
+      </a>
+
+      <a class="navbar-item">
+        <a href="high.html" class="is-size-6 has-text-grey-dark py-4 px-3 mt-2">View Hight Scores </a>
+      </a>
+
+    </div>
+
+    </div>
+
+    <section>
+
+
+        <div class="container">
+            <div class="columns is-vcentered">
+            <!-- create space -->
+                <div class="column is-3"> 
+                </div>
+            <!-- create space -->
+
+        <div class="column is-6"> 
+          <div class="container">
+            <div id="end" class="has-text-centered">
+                <h3 class="pt-5 has-text-centered has-text-grey-dark is-size-4">Well done!</h3>
+                <p class="mt-5 has-text-centered has-text-grey-dark is-size-6">Your score is <a class="has-text-grey-dark is-size-6" id="finalScore">0</a></p>
+            <form>
+                <p id="end-text" class=" is-size-6">Enter initials below</p>
+              <div class="container mt-2" style="max-width: 275px">
+                <input type="text" id="username" name="name" class="input is-small" placeholder="Enter your initials">
+                </div>
+
+                <button id="saveScoreBtn" class="is-size-6 mt-4 button is-dark is-light" type="submit" onclick="saveHighScore(event)">Save</button>
+            </form>
+
+
+        
+            </div>
+          </div>
+        </div>
+
+            <!-- create space -->
+                <div class="column is-3">
+                </div>
+            <!-- create space -->
+    
+            </div>
+    
+        </div>
+
+
+    </section>
+
+    <script src="assets\end.js"></script>
+</body>

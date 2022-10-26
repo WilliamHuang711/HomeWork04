@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Quiz Game</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="assets\style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+      </head>
+    <body>
+
+      <div class="navbar is-white has-shadow">
+        <div class="navbar-brand">
+
+          <a class="navbar-item">
+            <a href="index.html" class="is-size-6 has-text-grey-dark py-4 px-3 ml-2 mt-2"> Home </a>
+          </a>
+
+          <a class="navbar-item">
+            <a href="high.html" class="is-size-6 has-text-grey-dark py-4 px-3 mt-2">View Hight Scores </a>
+          </a>
+
+        </div>
+
+          <div class="navbar-end">
+            <a class="container">
+              <a class="is-size-6 has-text-grey-dark py-5 px-5"> Remaining Time:
+                <span class="is-size-6 has-text-grey-dark px-1" id="count">20</span></a>
+            </a>
+          </div>
+        </div>
+
+          <section class="section">
+            <div class="container">
+                <div class="columns is-vcentered">
+                <!-- create space -->
+                    <div class="column is-3"> 
+                    </div>
+                <!-- create space -->
+
+            <div class="column is-6"> 
+
+                <div class="container">
+                  <div id="game">
+                    <div>
+                      <div class="has-text-grey-dark is-size-5 px-5">
+                        <p id="progressText">Question</p>
+                        <div id="progressBar">
+                          <div id="progressBarFull"></div>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="has-text-grey-dark has-text-centered is-size-3" >Your Score:</p>
+                        <h1 class="has-text-grey-dark has-text-centered is-size-3" id="score">0</h1>
+                      </div>
+                    </div>
+
+                    <p class="has-text-grey-dark has-text-centered is-size-4" id="question">Answer the questions below</p>
+                    <div>
+                      <p class="ml-4 mt-2 has-text-grey-dark is-size-5 choice-text" data-number="1">Choice1</p>
+                    </div>
+
+                    <div>
+                      <p class="ml-4 has-text-grey-dark is-size-5 choice-text" data-number="2">Choice2</p>
+                    </div>
+
+                    <div>
+                      <p class="ml-4 has-text-grey-dark is-size-5 choice-text" data-number="3">Choice3</p>
+                    </div>
+
+                    <div>
+                      <p class="ml-4 has-text-grey-dark is-size-5 choice-text" data-number="4">Choice4</p>
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+
+
+            </div>
+
+                <!-- create space -->
+                    <div class="column is-3">
+                    </div>
+                <!-- create space -->
+        
+                </div>
+        
+            </div>
+            
+        </section>
+
+        <script src="assets\game.js"></script>
+    </body>
+</html>
